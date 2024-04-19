@@ -1,0 +1,30 @@
+<!-- activity_category_delete.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewDeleteConfirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to delete this category?"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_marginBottom="32dp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/btnDeleteCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDeleteConfirmation"
+        android:text="Delete"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@android:color/white"
+        android:onClick="onDeleteCategory"/>
+
+</RelativeLayout>

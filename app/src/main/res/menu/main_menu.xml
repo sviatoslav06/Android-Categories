@@ -4,4 +4,8 @@
         android:title="Головна"/>
     <item android:id="@+id/m_create"
         android:title="Додати"/>
+    <item android:id="@+id/m_update"
+        android:title="Редагувати"/>
+    <item android:id="@+id/m_delete"
+        android:title="Видалити"/>
 </menu>

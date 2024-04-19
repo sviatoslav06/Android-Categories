@@ -2,9 +2,11 @@ package com.example.shop;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -38,15 +40,6 @@ public class MainActivity extends BaseActivity {
         rcCategories.setHasFixedSize(true);
         rcCategories.setLayoutManager(new GridLayoutManager(this, 1, RecyclerView.VERTICAL, false));
 
-//        ImageView ivAvatar = findViewById(R.id.ivAvatar);
-////        String url = "https://content1.rozetka.com.ua/goods/images/big/415679366.jpg";
-////        String url = "http://10.0.2.2:5297/images/1.jpg";
-//        String url = "https://spu111.itstep.click/images/1.jpg";
-//        Glide.with(HomeApplication.getAppContext())
-//                .load(url)
-//                .apply(new RequestOptions().override(400))
-//                .into(ivAvatar);
-
         ApplicationNetwork
                 .getInstance()
                 .getCategoriesApi()
@@ -58,8 +51,6 @@ public class MainActivity extends BaseActivity {
                             List<CategoryItemDTO> items = response.body();
                             CategoriesAdapter ca = new CategoriesAdapter(items);
                             rcCategories.setAdapter(ca);
-                            //int count = response.body().size();
-                            //Log.d("---count---", String.valueOf(count));
                         }
                     }
 
