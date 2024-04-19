@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Urnkykc89A5Bnb6HbvNElNhh93ctpo/p4qOJVHcrF1vgvNaGECLX6XcD1GCw+8XKXzZIrsnLQIJLE7B1xj61Ow==",
+  "dgSpecHash": "s6PpJ0XFRyci8h+Mz/6bc9McBVoWoEgKl5ifPAKKwfMdSYc17gNCkwH0IJdh4G2aPBniOrFjMdo8sc5p3uVpog==",
   "success": true,
   "projectFilePath": "E:\\AndroidProjects\\WebStore\\WebStore.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\samol\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\samol\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\samol\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\samol\\.nuget\\packages\\sixlabors.imagesharp\\3.1.4\\sixlabors.imagesharp.3.1.4.nupkg.sha512",
     "C:\\Users\\samol\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
     "C:\\Users\\samol\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",
     "C:\\Users\\samol\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",

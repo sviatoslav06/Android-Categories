@@ -81,3 +81,7 @@ E:\AndroidProjects\WebStore\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.d
 E:\AndroidProjects\WebStore\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 E:\AndroidProjects\WebStore\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 E:\AndroidProjects\WebStore\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\AndroidProjects\WebStore\bin\Debug\net7.0\images\kovbasa.jpg
+E:\AndroidProjects\WebStore\bin\Debug\net7.0\images\shoes.jpg
+E:\AndroidProjects\WebStore\bin\Debug\net7.0\SixLabors.ImageSharp.dll
+E:\AndroidProjects\WebStore\obj\Debug\net7.0\WebStore.sourcelink.json
