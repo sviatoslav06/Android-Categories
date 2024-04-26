@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{63BA260A-D51E-4C45-82F8-62FAF0BCC121}|WebStore.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{63BA260A-D51E-4C45-82F8-62FAF0BCC121}|WebStore.csproj|e:\\androidprojects\\webstore\\models\\categories\\categoryeditviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63BA260A-D51E-4C45-82F8-62FAF0BCC121}|WebStore.csproj|solutionrelative:models\\categories\\categoryeditviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{63BA260A-D51E-4C45-82F8-62FAF0BCC121}|WebStore.csproj|e:\\androidprojects\\webstore\\models\\categories\\categorycreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63BA260A-D51E-4C45-82F8-62FAF0BCC121}|WebStore.csproj|solutionrelative:models\\categories\\categorycreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,12 +59,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CategoryEditViewModel.cs",
+              "DocumentMoniker": "E:\\AndroidProjects\\WebStore\\Models\\Categories\\CategoryEditViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\Categories\\CategoryEditViewModel.cs",
+              "ToolTip": "E:\\AndroidProjects\\WebStore\\Models\\Categories\\CategoryEditViewModel.cs",
+              "RelativeToolTip": "Models\\Categories\\CategoryEditViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T06:20:57.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CategoryCreateViewModel.cs",
               "DocumentMoniker": "E:\\AndroidProjects\\WebStore\\Models\\Categories\\CategoryCreateViewModel.cs",
               "RelativeDocumentMoniker": "Models\\Categories\\CategoryCreateViewModel.cs",
               "ToolTip": "E:\\AndroidProjects\\WebStore\\Models\\Categories\\CategoryCreateViewModel.cs",
               "RelativeToolTip": "Models\\Categories\\CategoryCreateViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T08:30:33.764Z",
               "EditorCaption": ""
@@ -73,14 +90,14 @@
               "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
               "ToolTip": "E:\\AndroidProjects\\WebStore\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowCQAAAAkAAAA",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAIwG8AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T08:30:04.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MyAppContext.cs",
               "DocumentMoniker": "E:\\AndroidProjects\\WebStore\\Data\\MyAppContext.cs",
               "RelativeDocumentMoniker": "Data\\MyAppContext.cs",
@@ -88,12 +105,11 @@
               "RelativeToolTip": "Data\\MyAppContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T08:29:59.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T08:29:59.617Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CategoryEntity.cs",
               "DocumentMoniker": "E:\\AndroidProjects\\WebStore\\Data\\Entities\\CategoryEntity.cs",
               "RelativeDocumentMoniker": "Data\\Entities\\CategoryEntity.cs",
@@ -101,12 +117,11 @@
               "RelativeToolTip": "Data\\Entities\\CategoryEntity.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T08:29:56.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T08:29:56.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "WebStore.csproj",
               "DocumentMoniker": "E:\\AndroidProjects\\WebStore\\WebStore.csproj",
               "RelativeDocumentMoniker": "WebStore.csproj",
@@ -114,8 +129,7 @@
               "RelativeToolTip": "WebStore.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-06T10:03:05.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-06T10:03:05.399Z"
             }
           ]
         }

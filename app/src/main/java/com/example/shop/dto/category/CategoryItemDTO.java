@@ -5,6 +5,16 @@ public class CategoryItemDTO {
     private String name;
     private String description;
 
+    public String getImage() {
+        return Image;
+    }
+
+    public void setImage(String image) {
+        Image = image;
+    }
+
+    private String Image;
+
     public int getId() {
         return id;
     }
