@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "s6PpJ0XFRyci8h+Mz/6bc9McBVoWoEgKl5ifPAKKwfMdSYc17gNCkwH0IJdh4G2aPBniOrFjMdo8sc5p3uVpog==",
+  "dgSpecHash": "kJJhs/XOAtQ456iaRKWZKHoHHsq/mb3sWWbQdJ5R1CVUoTKO+U+WdMGZ7u2azGDcST8OTZDCNnqqeNjcD6iCZA==",
   "success": true,
   "projectFilePath": "E:\\AndroidProjects\\WebStore\\WebStore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\samol\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\samol\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\samol\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.17\\microsoft.aspnetcore.authentication.jwtbearer.7.0.17.nupkg.sha512",
     "C:\\Users\\samol\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.17\\microsoft.aspnetcore.cryptography.internal.7.0.17.nupkg.sha512",

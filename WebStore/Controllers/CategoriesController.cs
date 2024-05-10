@@ -1,37 +1,77 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Formats.Webp;
 using SixLabors.ImageSharp.Processing;
 using WebStore.Data;
 using WebStore.Data.Entities;
+using WebStore.Data.Entities.Identity;
 using WebStore.Models.Categories;
 
 namespace WebStore.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoriesController : ControllerBase
     {
         private readonly MyAppContext _appContext;
+        private readonly UserManager<UserEntity> _userManager;
+        private readonly IMapper _mapper;
 
-        public CategoriesController(MyAppContext appContext)
+        public CategoriesController(MyAppContext appContext, UserManager<UserEntity> userManager, IMapper mapper)
         {
             _appContext = appContext;
+            _userManager = userManager;
+            _mapper = mapper;
         }
 
         [HttpGet]
-        public IActionResult Get()
+        private async Task<UserEntity> GetUserAuthAsync()
         {
-            var list = _appContext.Categories.ToList();
+            var email = User.Claims.FirstOrDefault().Value;
+            var user = await _userManager.FindByEmailAsync(email);
+            return user;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            var user = await GetUserAuthAsync();
+            var list = _appContext.Categories
+                .Where(x => x.UserId == user.Id)
+                .Select(x => _mapper.Map<CategoryItemViewModel>(x))
+                .ToList();
             return Ok(list);
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var user = await GetUserAuthAsync();
+            var category = _appContext.Categories
+                .Where(x => x.UserId == user.Id)
+                .SingleOrDefault(x => x.Id == id);
+
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(_mapper.Map<CategoryItemViewModel>(category));
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] CategoryCreateViewModel model)
         {
+            var user = await GetUserAuthAsync();
             var category = new CategoryEntity
             {
                 Name = model.Name,
-                Description = model.Description
+                Description = model.Description,
+                UserId = user.Id,
             };
 
             if (model.Image != null)
@@ -59,13 +99,18 @@ namespace WebStore.Controllers
 
             _appContext.Categories.Add(category);
             _appContext.SaveChanges();
-            return Ok(category);
+
+            return Ok(_mapper.Map<CategoryItemViewModel>(category));
         }
 
         [HttpPut]
         public async Task<IActionResult> Edit([FromForm] CategoryEditViewModel model)
         {
-            var category = _appContext.Categories.SingleOrDefault(x => x.Id == model.Id);
+            var user = await GetUserAuthAsync();
+            var category = _appContext.Categories
+                .Where(x => x.UserId == user.Id)
+                .SingleOrDefault(x => x.Id == model.Id);
+
             if (category == null)
             {
                 return NotFound();
@@ -100,13 +145,18 @@ namespace WebStore.Controllers
             category.Description = model.Description;
             category.Name = model.Name;
             _appContext.SaveChanges();
-            return Ok(category);
+
+            return Ok(_mapper.Map<CategoryItemViewModel>(category));
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var category = _appContext.Categories.SingleOrDefault(x => x.Id == id);
+            var user = await GetUserAuthAsync();
+            var category = _appContext.Categories
+                .Where(x => x.UserId == user.Id)
+                .SingleOrDefault(x => x.Id == id);
+
             if (category == null)
             {
                 return NotFound();

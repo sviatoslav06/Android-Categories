@@ -2,24 +2,14 @@ package com.example.shop;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.ImageView;
 
-import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
-import com.example.shop.application.HomeApplication;
 import com.example.shop.category.CategoriesAdapter;
 import com.example.shop.dto.category.CategoryItemDTO;
 import com.example.shop.services.ApplicationNetwork;
+import com.example.shop.utils.CommonUtils;
 
 import java.util.List;
 
@@ -40,6 +30,8 @@ public class MainActivity extends BaseActivity {
         rcCategories.setHasFixedSize(true);
         rcCategories.setLayoutManager(new GridLayoutManager(this, 1, RecyclerView.VERTICAL, false));
 
+        CommonUtils.showLoading();
+
         ApplicationNetwork
                 .getInstance()
                 .getCategoriesApi()
@@ -52,11 +44,13 @@ public class MainActivity extends BaseActivity {
                             CategoriesAdapter ca = new CategoriesAdapter(items);
                             rcCategories.setAdapter(ca);
                         }
+                        CommonUtils.hideLoading();
                     }
 
                     @Override
                     public void onFailure(Call<List<CategoryItemDTO>> call, Throwable throwable) {
                         Log.e("--problem--", "error server");
+                        CommonUtils.hideLoading();
                     }
                 });
     }

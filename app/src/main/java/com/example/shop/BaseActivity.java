@@ -8,7 +8,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.shop.category.CategoryCreateActivity;
 
+import com.example.shop.utils.CommonUtils;
+
 public class BaseActivity extends AppCompatActivity {
+    public BaseActivity(){
+        CommonUtils.setContext(this);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.main_menu, menu);

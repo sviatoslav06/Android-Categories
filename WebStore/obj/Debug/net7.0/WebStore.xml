@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebStore</name>
+    </assembly>
+    <members>
+        <member name="T:WebStore.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:WebStore.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebStore.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebStore.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebStore.Migrations.AddIdentityTables">
+            <inheritdoc />
+        </member>
+        <member name="M:WebStore.Migrations.AddIdentityTables.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebStore.Migrations.AddIdentityTables.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebStore.Migrations.AddIdentityTables.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebStore.Migrations.AddColumnImagesTableCategories">
+            <inheritdoc />
+        </member>
+        <member name="M:WebStore.Migrations.AddColumnImagesTableCategories.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebStore.Migrations.AddColumnImagesTableCategories.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebStore.Migrations.AddColumnImagesTableCategories.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebStore.Migrations.Addedusersandroles">
+            <inheritdoc />
+        </member>
+        <member name="M:WebStore.Migrations.Addedusersandroles.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebStore.Migrations.Addedusersandroles.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebStore.Migrations.Addedusersandroles.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="P:WebStore.Models.Account.LoginViewModel.Email">
+            <summary>
+            Пошта користувача
+            </summary>
+            <example>admin@gmail.com</example>
+        </member>
+        <member name="P:WebStore.Models.Account.LoginViewModel.Password">
+            <summary>
+            Пароль користувача
+            </summary>
+            <example>123456</example>
+        </member>
+    </members>
+</doc>

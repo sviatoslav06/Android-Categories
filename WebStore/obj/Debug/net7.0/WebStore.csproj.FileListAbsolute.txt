@@ -85,3 +85,6 @@ E:\AndroidProjects\WebStore\bin\Debug\net7.0\images\kovbasa.jpg
 E:\AndroidProjects\WebStore\bin\Debug\net7.0\images\shoes.jpg
 E:\AndroidProjects\WebStore\bin\Debug\net7.0\SixLabors.ImageSharp.dll
 E:\AndroidProjects\WebStore\obj\Debug\net7.0\WebStore.sourcelink.json
+E:\AndroidProjects\WebStore\bin\Debug\net7.0\images\z2jbc03z.bjh.webp
+E:\AndroidProjects\WebStore\bin\Debug\net7.0\WebStore.xml
+E:\AndroidProjects\WebStore\obj\Debug\net7.0\WebStore.xml
